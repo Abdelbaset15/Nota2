@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <title>Nota-CARD</title>
+</head>
+<body>
+
+  <style>
+    .header-links div:nth-child(3) a {
+      color: var(--logo-color);
+    }
+  </style>
+  
+    
+    <header>
+
+        <div class="header-parent">
+
+            <div class="header-title">
+                <h1>Nota</h1>
+            </div>
+
+
+            <div class="header-links">
+                <div><a href="index.html" class="hover-effect"><p>HOME</p><i class="fa-solid fa-house"></i></a></div>
+                <div><a href="products.html"><p>PRODUCTS</p><i class="fa-solid fa-book"></i></a></div>
+                <div><a href="card.html"><p>CARD</p><i class="fa-solid fa-cart-shopping"></i></a></div>
+            </div>
+
+            <div class="header-username">
+                <button type="button" id="openBtn" class="fa-solid fa-search"><span class="span1">.</span></button>
+                <button type="button" class="fa-solid fa-user" onclick="toggleLoginPopup()"><span class="span1">.</span></button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div id="search">
+      <form action="" method="get">
+          <label for="search-bar">search:</label>
+          <input name="aa" id="search-bar" type="search">
+          <button class="search-click" type="submit">Click</button>
+          <button id="closeBtn" type="button">X</button>
+      </form>
+      </div>
+      
+  <div class="overlay" id="overlay">
+
+          <div id="login-popup" class="login-popup">
+              <div class="popup-content">
+                  <span class="close-btn" onclick="toggleLoginPopup()">&times;</span>
+                  <h2>Login</h2>
+                  <form>
+                      <label for="username">Username:</label>
+                      <input type="text" id="username" name="username" placeholder="Enter your username:" required>
+                      
+                      <label for="password">Password:</label>
+                      <input type="password" id="password" name="password" placeholder="Enter your password:" required>
+                      
+                      <button id="popup-button" type="button" onclick="window.location.href = 'profile.html'">Login</button>
+                  </form>
+              </div>
+          </div>
+
+  </div>
+
+
+    
+<!------------------------------------------------------------------------------->
+
+<div class="shopping-parent">
+  <div class="shopping-title">
+    <h2>Product</h2>
+    <h2>Quantity</h2>
+    <h2>Subtotal</h2>
+  </div>
+
+
+  <div class="shopping-product-parent">
+    <div class="shopping-product">
+      <div class="product-info">
+      <img src="imgs/drums.jpg" alt=".">
+      <div class="product-details">
+        <h4>drum drum drum</h4>
+        <p>glp glp</p>
+      </div>
+      </div>
+      <p class="a1">input</p>
+      <p class="a2">100$</p>
+    </div>
+
+    <div class="shopping-product">
+      <div class="product-info">
+      <img src="imgs/drums.jpg" alt=".">
+      <div class="product-details">
+        <h4>drum drum drum</h4>
+        <p>glp glp</p>
+      </div>
+      </div>
+      <p class="a1">input</p>
+      <p class="a2">100$</p>
+    </div>
+
+    <div class="shopping-product">
+      <div class="product-info">
+      <img src="imgs/drums.jpg" alt=".">
+      <div class="product-details">
+        <h4>drum drum drum</h4>
+        <p>glp glp</p>
+      </div>
+      </div>
+      <p class="a1">input</p>
+      <p class="a2">100$</p>
+    </div>
+  </div>
+
+
+  <div class="shopping-payment">
+    <div>
+      <h4>Subtotal</h4>
+      <p>100$</p>
+    </div>
+
+    <div>
+      <h4>Tax</h4>
+      <p>15$</p>
+    </div>
+
+    <div>
+      <h4>Delivery</h4>
+      <p>10$</p>
+    </div>
+
+    <div>
+      <h3>Total</h3>
+      <p>125$</p>
+    </div>
+
+  <div>
+
+    <button onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
+
+  </div>
+    
+  </div>
+
+<div class="background-text">Music is not just sound, it's emotion in every note. 🎶</div>
+<div class="instrument-shopping">
+  <i class="fa-solid fa-music"></i>
+  <i class="fa-solid fa-music"></i>
+</div>
+</div>
+
+<!------------------------------------------------------------------------------->
+
+
+<footer>
+  <div class="footer-parent">
+
+      <div class="footer-header">
+          <div>
+              <i class="fa-solid fa-folder" ></i>
+              <h5>Nota</h5>
+          </div>
+          <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate odit dolores sequi distinctio, ullam officia aspernatur iure fugiat aliquam quia?</p> <br> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, aperiam!</p></div>
+      </div>
+
+      <div class="categories">
+
+          <div class="categories-header">
+                  <h2>categories</h2>
+          </div>
+
+          <div class="categories-links">
+          <a href="index.html">product1</a>
+          <a href="index.html">product2</a>
+          <a href="index.html">product3</a>
+          <a href="index.html">product4</a>
+          <a href="index.html">product5</a>
+          <a href="index.html">product6</a>
+          <a href="index.html">product7</a>
+          <a href="index.html">product8</a>
+          </div>
+
+      </div>
+
+      <div class="footer-footer">
+
+          <div class="copyright">
+              <p>copyright© 2025 Nota.com. All rights Reserved</p>
+          </div>
+
+          <div class="social">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+
+      </div>
+
+  </div>
+</footer>
+
+<!-- ----------------------------------------------------------------------- -->
+<div class='alert'><p>your <br/> Device <br/> is not <br/> Supported</p></div>
+<script src="code.js"></script>   
+</body>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <title>Nota-product-details</title>
+</head>
+<header>
+
+  <div class="header-parent">
+
+      <div class="header-title">
+          <h1>Nota</h1>
+      </div>
+
+
+      <div class="header-links">
+          <div><a href="index.html" class="hover-effect"><p>HOME</p><i class="fa-solid fa-house"></i></a></div>
+          <div><a href="products.html"><p>PRODUCTS</p><i class="fa-solid fa-book"></i></a></div>
+          <div><a href="card.html"><p>CARD</p><i class="fa-solid fa-cart-shopping"></i></a></div>
+      </div>
+
+      <div class="header-username">
+          <button style="display: none;" type="button" id="openBtn" class="fa-solid fa-search"><span class="span1">.</span></button>
+          <button type="button" class="fa-solid fa-user" onclick="toggleLoginPopup()"><span class="span1">.</span></button>
+      </div>
+
+  </div>
+
+</header>
+
+<div id="search">
+  <form action="" method="get">
+      <label for="search-bar">search:</label>
+      <input name="aa" id="search-bar" type="search">
+      <button class="search-click" type="submit">Click</button>
+      <button id="closeBtn" type="submit">X</button>
+  </form>
+  </div>
+  
+<div class="overlay" id="overlay">
+
+      <div id="login-popup" class="login-popup">
+          <div class="popup-content">
+              <span class="close-btn" onclick="toggleLoginPopup()">&times;</span>
+              <h2>Login</h2>
+              <form>
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" name="username" placeholder="Enter your username:" required>
+                  
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" placeholder="Enter your password:" required>
+                  
+                  <button id="popup-button" type="button" onclick="window.location.href = 'profile.html'">Login</button>
+                </form>
+          </div>
+      </div>
+
+</div>
+
+
+<div class="product-details-parent">
+  <div class="product-details-img"><img src="imgs/drums.jpg" alt=""></div>
+
+  <div class="product-details">
+    <h2>drums</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus exercitationem quae placeat fugiat eius debitis eaque iste doloremque dolorum animi!</p>
+    <div><span></span><span></span><span></span></div>
+    <p>1 piece available</p>
+    <p>price: 20$</p>
+    <div> <button>add to card</button> <i class="fa-solid fa-cart-shopping"></i> </div>
+  </div>
+</div>
+
+<div class="product-comments-parent">
+  <div class="product-comments">
+    <div class="user"><img src="imgs/audio.jpg" alt=""><h3>Name</h3></div>
+    <form id="commentForm">
+      <textarea id="commentText" cols="30" rows="10" placeholder="write your comment" required></textarea>
+      <button type="submit">send</button>
+    </form>
+  </div>
+</div>
+
+<div class="product-details-footer">
+  <h3>you may like too:</h3>
+  <div class="product-details-footer-products">
+    <div><img src="imgs/drums.jpg" alt=""><p>drums</p><p>50$</p></div>
+    <div><img src="imgs/drums.jpg" alt=""><p>drums</p><p>50$</p></div>
+    <div><img src="imgs/drums.jpg" alt=""><p>drums</p><p>50$</p></div>
+    <div><img src="imgs/drums.jpg" alt=""><p>drums</p><p>50$</p></div>
+    <div><img src="imgs/drums.jpg" alt=""><p>drums</p><p>50$</p></div>
+  </div>
+</div>
+
+
+<script src="code.js"></script>
+</html>

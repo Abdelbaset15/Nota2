@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <title>Nota</title>
+</head>
+<body>
+
+  <style>
+    .header-links div:nth-child(1) a {
+      color: var(--logo-color);
+    }
+  </style>
+  
+    
+    <header>
+
+        <div class="header-parent">
+
+            <div class="header-title">
+                <h1>Nota</h1>
+            </div>
+
+
+            <div class="header-links">
+                <div><a href="index.html" class="hover-effect"><p>HOME</p><i class="fa-solid fa-house"></i></a></div>
+                <div><a href="products.html"><p>PRODUCTS</p><i class="fa-solid fa-book"></i></a></div>
+                <div><a href="card.html"><p>CARD</p><i class="fa-solid fa-cart-shopping"></i></a></div>
+            </div>
+
+            <div class="header-username">
+                <button type="button" id="openBtn" class="fa-solid fa-search"><span class="span1">.</span></button>
+                <button type="button" class="fa-solid fa-user" onclick="toggleLoginPopup()"><span class="span1">.</span></button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div id="search">
+        <form action="" method="get">
+            <label for="search-bar">search:</label>
+            <input name="aa" id="search-bar" type="search">
+            <button class="search-click" type="submit">Click</button>
+            <button id="closeBtn" type="button">X</button>
+        </form>
+        </div>
+        
+    <div class="overlay" id="overlay">
+
+            <div id="login-popup" class="login-popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="toggleLoginPopup()">&times;</span>
+                    <h2>Login</h2>
+                    <form>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username:" required>
+                        
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password:" required>
+                        
+                      <button id="popup-button" type="button" onclick="window.location.href = 'profile.html'">Login</button>
+
+                    </form>
+                </div>
+            </div>
+
+    </div>
+
+    <main>
+        <div class="main-parent">
+
+            <div id="product"></div>
+            <div><i class="fa-brands fa-soundcloud"></i></div>
+            <div><p>Turning Every Note into a <br> Masterpiece.!</p></div>
+
+        </div>
+
+    </main>
+
+    <article>
+        <div class="article-parent">
+
+            <div class="article-header">
+                <i class="fa-solid fa-folder"></i>
+                <h2>sec1</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+            </div>
+
+            <div class="article-body-wrapper">
+                <div class="article-body">
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product1</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                            <button>+</button>
+                            <button><a href="product-details.html">Details</a></button>
+                            <p>$1000</p>
+                          </div>
+                    </div>
+    
+                    <div class="card">
+                      <img src="imgs/drums.jpg" alt=".">
+                        <h2>product2</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                          <button>+</button>
+                          <button><a href="product-details.html">Details</a></button>
+                          <p>$1200</p>
+                        </div>
+                      </div>
+                      
+                      <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product3</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                          <button>+</button>
+                          <button><a href="product-details.html">Details</a></button>
+                          <p>$1300</p>
+                        </div>
+                      </div>
+                      
+                      <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product4</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                          <button>+</button>
+                          <button><a href="product-details.html">Details</a></button>
+                          <p>$1400</p>
+                        </div>
+                      </div>
+    
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product5</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                          <button>+</button>
+                          <button><a href="product-details.html">Details</a></button>
+                          <p>$1500</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product6</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                          <button>+</button>
+                          <button><a href="product-details.html">Details</a></button>
+                          <p>$1600</p>
+                        </div>
+                      </div>
+                      
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product7</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                          <button>+</button>
+                          <button><a href="product-details.html">Details</a></button>
+                          <p>$1200</p>
+                        </div>
+                      </div>
+                      
+                      <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product8</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                          <button>+</button>
+                          <button><a href="product-details.html">Details</a></button>
+                          <p>$1200</p>
+                        </div>
+                      </div>
+                      
+                      <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product9</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                          <button>+</button>
+                          <button><a href="product-details.html">Details</a></button>
+                          <p>$1200</p>
+                        </div>
+                      </div>
+    
+                </div>
+            </div>
+
+            <div class="article-header">
+              <i class="fa-solid fa-folder"></i>
+              <h2>sec2</h2>
+              <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+            </div>
+            
+            <div class="article-body-wrapper">
+                <div class="article-body">
+                  <div class="card">
+                    <img src="imgs/drums.jpg" alt=".">
+                    <h2>product1</h2>
+                    <h3>used</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div>
+                      <button>+</button>
+                      <button><a href="product-details.html">Details</a></button>
+                      <p>$1000</p>
+                    </div>
+                  </div>
+    
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product2</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                          <button>+</button>
+                          <button><a href="product-details.html">Details</a></button>
+                          <p>$1200</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product3</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                            <button>+</button>
+                            <button><a href="product-details.html">Details</a></button>
+                            <p>$1300</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product4</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                            <button>+</button>
+                            <button><a href="product-details.html">Details</a></button>
+                            <p>$1400</p>
+                          </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product5</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                          <button>+</button>
+                          <button><a href="product-details.html">Details</a></button>
+                          <p>$1500</p>
+                        </div>
+                      </div>
+                      
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product6</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                            <button>+</button>
+                            <button><a href="product-details.html">Details</a></button>
+                            <p>$1600</p>
+                          </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product7</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                          <button>+</button>
+                          <button><a href="product-details.html">Details</a></button>
+                          <p>$1200</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product8</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                          <button>+</button>
+                          <button><a href="product-details.html">Details</a></button>
+                          <p>$1200</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                      <img src="imgs/drums.jpg" alt=".">
+                      <h2>product9</h2>
+                      <h3>used</h3>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <div>
+                        <button>+</button>
+                        <button><a href="product-details.html">Details</a></button>
+                        <p>$1200</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="article-header">
+                <i class="fa-solid fa-folder"></i>
+                <h2>sec3</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+            </div>
+
+            <div class="article-body-wrapper">
+                <div class="article-body">
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product1</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                            <button>+</button>
+                            <button><a href="product-details.html">Details</a></button>
+                            <p>$1000</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product2</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                            <button>+</button>
+                            <button><a href="product-details.html">Details</a></button>
+                            <p>$1200</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product3</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                            <button>+</button>
+                            <button><a href="product-details.html">Details</a></button>
+                            <p>$1300</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product4</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                            <button>+</button>
+                            <button><a href="product-details.html">Details</a></button>
+                            <p>$1400</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product5</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                            <button>+</button>
+                            <button><a href="product-details.html">Details</a></button>
+                            <p>$1500</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product6</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                            <button>+</button>
+                            <button><a href="product-details.html">Details</a></button>
+                            <p>$1600</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product7</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                            <button>+</button>
+                            <button><a href="product-details.html">Details</a></button>
+                            <p>$1200</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product8</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                            <button>+</button>
+                            <button><a href="product-details.html">Details</a></button>
+                            <p>$1200</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="imgs/drums.jpg" alt=".">
+                        <h2>product9</h2>
+                        <h3>used</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div>
+                            <button>+</button>
+                            <button><a href="product-details.html">Details</a></button>
+                            <p>$1200</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+        </div>
+    </article>
+
+    <footer>
+        <div class="footer-parent">
+
+            <div class="footer-header">
+                <div>
+                    <i class="fa-solid fa-folder" ></i>
+                    <h5>Nota</h5>
+                </div>
+                <div><p>
+                  At Nota, we are passionate about music and dedicated to providing high-quality musical instruments for musicians of all levels. Whether you're a beginner or a professional, we offer a wide range of instruments and accessories to help you create the perfect sound,<br> 
+                  
+                  Our mission is to bring music closer to everyone by offering top brands, excellent customer service, and affordable prices. Let’s make music together! <br>
+                  
+                  Feel free to tweak it to match your brand’s personality! 😊</p></div>
+            </div>
+
+            <div class="categories">
+
+                <div class="categories-header">
+                        <h2>categories</h2>
+                </div>
+
+                <div class="categories-links">
+                <a href="index.html">product1</a>
+                <a href="index.html">product2</a>
+                <a href="index.html">product3</a>
+                <a href="index.html">product4</a>
+                <a href="index.html">product5</a>
+                <a href="index.html">product6</a>
+                <a href="index.html">product7</a>
+                <a href="index.html">product8</a>
+                </div>
+
+            </div>
+
+            <div class="footer-footer">
+
+                <div class="copyright">
+                    <p>copyright© 2025 Nota.com. All rights Reserved</p>
+                </div>
+
+                <div class="social">
+                    <a href="index.html"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="night">
+        <div class="instrument">
+            <i class="fa-solid fa-guitar"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-headphones"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-music"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-drum"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-compact-disc"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-drum-steelpan"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-brands fa-napster"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-microphone-lines"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-record-vinyl"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-guitar"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-headphones"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-music"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-drum"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-compact-disc"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-drum-steelpan"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-brands fa-napster"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-microphone-lines"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <div class="instrument">
+            <i class="fa-solid fa-record-vinyl"></i>
+        </div>
+    </div>
+
+
+    <button id="backToTop" class="back-to-top">&#8679;</button>
+  
+    <div class='alert'><p>your <br/> Device <br/> is not <br/> Supported</p></div>
+    <script src="code.js"></script>
+</body>
+
+</html>

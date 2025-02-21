@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <title>Nota-profile</title>
+</head>
+
+
+  <header>
+
+    <div class="header-parent">
+
+        <div class="header-title">
+            <h1>Nota</h1>
+        </div>
+
+
+        <div class="header-links">
+            <div><a href="index.html" class="hover-effect"><p>HOME</p><i class="fa-solid fa-house"></i></a></div>
+            <div><a href="products.html"><p>PRODUCTS</p><i class="fa-solid fa-book"></i></a></div>
+            <div><a href="card.html"><p>CARD</p><i class="fa-solid fa-cart-shopping"></i></a></div>
+        </div>
+
+        <div class="header-username">
+            <button style="display: none;" type="button" id="openBtn" class="fa-solid fa-search"><span class="span1">.</span></button>
+            <button style="display: none;" type="button" class="fa-solid fa-user" onclick="toggleLoginPopup()"><span class="span1">.</span></button>
+        </div>
+
+    </div>
+
+  </header>
+
+  <div class="profile-parent">
+
+    <div class="profile-header">
+      <div id="backgroundDiv" onclick="document.getElementById('imageInput').click();" ></div> <input type="file" id="imageInput" accept="image/*" aria-label="choose img">
+      <h2>your information</h2>
+    </div>
+
+    <div class="profile-body">
+      <div class="user-info">
+        <p>lloyd frontera</p>
+
+        <span id="genderLabel" style="position: absolute; width: 1px; height: 1px; overflow: hidden">choose gender</span>
+        <select name="gender" aria-labelledby="genderLabel">
+        <option value="male">👨</option>
+        <option value="female">👩</option>
+        </select>
+      
+        <p>4 frontera street - alex - egypt</p>
+      </div>
+
+      <div class="your-requests">
+        <h3>your onGoing requests</h3>
+        <div class="your-requests-info">
+          <div><img src="imgs/drums.jpg" alt=""><p>drum</p></div>
+          <div><img src="imgs/drums.jpg" alt=""><p>drum</p></div>
+          <div><img src="imgs/drums.jpg" alt=""><p>drum</p></div>
+          <div><img src="imgs/drums.jpg" alt=""><p>drum</p></div>
+        </div>
+        <p>wil arrived in 2pm</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    let backgroundDiv = document.getElementById("backgroundDiv");
+    let imageInput = document.getElementById("imageInput");
+
+    let savedImage = localStorage.getItem("backgroundImage");
+    if (savedImage) {
+        backgroundDiv.style.backgroundImage = `url(${savedImage})`;
+    }
+
+    imageInput.addEventListener("change", function (event) {
+        let file = event.target.files[0]; 
+        if (file) {
+            let reader = new FileReader();
+            reader.onload = function (e) {
+                let imageUrl = e.target.result;
+                backgroundDiv.style.backgroundImage = `url(${imageUrl})`;
+
+                localStorage.setItem("backgroundImage", imageUrl);
+            };
+            reader.readAsDataURL(file);
+          }
+      });
+    });
+
+  </script>
+
+</html>
